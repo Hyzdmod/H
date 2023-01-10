@@ -5,12 +5,12 @@ RUN sudo dnf -y update &&\
     sudo dnf install -y git ffmpeg ImageMagick nodejs yarnpkg libwebp &&\
     sudo dnf clean all -y
 
-RUN git clone https://github.com/Hyzdmod/Zuri-BOT
+RUN git clone https://github.com/Hyzdmod/H
 
-WORKDIR /root/Zuri-BOT
+WORKDIR /root/H
 
-COPY ./root/Zuri-BOT
+COPY ./root/H
 
 RUN npm install
 
-CMD ["node", "start.js"]
+CMD ["node", "."]
